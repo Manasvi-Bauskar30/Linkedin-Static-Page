@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+/************  Nav bar *******************/
+.navbar {
+  padding: 0 100px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.nav_list {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 0;
+  padding: 0 5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.nav_list > .logo {
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  /* font-size: 1rem; */
+  /* color: rgb(76, 76, 235); */
+  font-weight: 900;
+}
+
+.nav_list > .logo > span {
+  background: rgb(76, 76, 235);
+  color: white;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+
+.nav_list > .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_list > .items > span {
+  margin-top: 5px;
+  font-size: 13px;
+  color: rgb(116, 116, 116);
+}
+
+.nav_list > .items-n {
+  padding-right: 30px;
+  border-right: solid rgb(116, 116, 116) 1.5px;
+}
+
+.nav_list > .btn {
+  font-weight: 540;
+  padding: 12px 18px;
+  border-radius: 30px;
+}
+
+.nav_list > .btn:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.nav_list > .btn-sign {
+  color: rgb(76, 76, 235);
+  font-weight: 540;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: solid rgb(76, 76, 235) 1.5px;
+}
+
+.nav_list > .btn-sign:hover {
+  background-color: rgb(244, 255, 255);
+}
+
+.nav_list_item {
+  cursor: pointer;
+}
+/************  Nav bar ended *******************/
+
+/************  Hero section *******************/
+.hero {
+  height: 90vh;
+  display: flex;
+  padding: 50px 0 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.hero_img {
+  margin-left: auto;
+  margin-right: -6%;
+}
+
+.hero_content {
+  padding: 20px 0 0 100px;
+}
+
+.hero_head {
+  color: #8f5849;
+  font-size: 3.5rem;
+  font-weight: 50;
+}
+
+.hero_form {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.hero_form > input {
+  width: 100%;
+  height: 25px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.hero_form > input:focus {
+  outline: 1px solid rgb(76, 76, 235);
+}
+
+.form_t-c {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 15px 0;
+  color: rgb(116, 116, 116);
+}
+
+.form_t-c > a {
+  text-decoration: none;
+}
+
+.hero_form > button {
+  width: 105%;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background-color: rgb(76, 76, 235);
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form_alter {
+  position: relative;
+  width: 63%;
+  margin-top: 25px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  color: rgb(116, 116, 116);
+}
+.form_alter:before,
+.form_alter:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 47%;
+  height: 1px;
+  content: "\a0";
+  background-color: rgb(116, 116, 116);
+}
+.form_alter:before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+.form_login {
+  margin-top: 20px;
+  color: rgb(116, 116, 116);
+}
+
+.form_login > a {
+  text-decoration: none;
+}
+/************  Hero section ended *******************/
+
+/************  What to do  *******************/
+.what-to-do {
+  background-color: #f1ece5;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.what-to-do_head {
+  color: #b24020;
+  font-size: 2.4rem;
+  font-weight: 50;
+  line-height: 3rem;
+  width: 45%;
+}
+
+.what-to-do_cta {
+  width: 33%;
+}
+
+.what-to-do_btn {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.what-to-do_btn:hover {
+  box-shadow: 1px 5px 15px rgba(66, 66, 66, 0.384);
+}
+/************  What to do ended  *******************/
+
+/************  explore  *******************/
+.explore {
+  background-color: #f3f2f0;
+  padding: 80px 100px;
+  display: flex;
+  /* align-items: center; */
+  box-sizing: border-box;
+}
+
+.explore_head {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2.4rem;
+  font-weight: 50;
+  line-height: 3rem;
+  width: 42%;
+}
+
+.explore_cta {
+  width: 50%;
+}
+
+.explore_cta > p {
+  color: rgb(80, 80, 80);
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-bottom: 17px;
+}
+
+.explore_cta > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.explore_btn {
+  text-decoration: none;
+  width: fit-content;
+  margin: 4px 2px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  padding: 18px 20px;
+  border-radius: 30px;
+  border: solid rgb(0, 0, 0) 1.5px;
+}
+
+.explore_btn:hover {
+  background-color: rgba(82, 82, 82, 0.055);
+}
+/************  explore ended  *******************/
+
+/************  jobs  *******************/
+.jobs {
+  background-color: #ffffff;
+  padding: 80px 100px;
+  display: flex;
+  /* align-items: center; */
+  box-sizing: border-box;
+}
+
+.jobs_head {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2.4rem;
+  font-weight: 50;
+  line-height: 3rem;
+  width: 42%;
+}
+
+.jobs_cta {
+  width: 52%;
+}
+
+.jobs_cta > p {
+  color: rgb(80, 80, 80);
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-bottom: 17px;
+}
+
+.jobs_cta > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs_btn {
+  text-decoration: none;
+  width: fit-content;
+  margin: 4px 2px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  padding: 18px 20px;
+  border-radius: 30px;
+  border: solid rgb(0, 0, 0) 1.5px;
+}
+
+.jobs_btn:hover {
+  background-color: rgba(82, 82, 82, 0.055);
+}
+
+.jobs_more {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs_more > svg {
+  margin-top: 2px;
+}
+
+.jobs_more:hover {
+  background-color: rgb(233, 233, 233);
+}
+/************  jobs ended  *******************/
+
+/************  testmonial ended  *******************/
+.testimonial {
+  background-color: #f3f2f0;
+  padding: 80px 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.test_controll {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.test-controll_left,
+.test-controll_right {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f2f0;
+  cursor: pointer;
+  border: none;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test_content {
+  width: 50%;
+}
+
+.test_content > h2 {
+  color: #8f5849;
+  font-size: 2.4rem;
+  font-weight: 50;
+  line-height: 3rem;
+}
+
+.test_content > h3 {
+  margin-top: 13px;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  line-height: 2.5rem;
+}
+
+.test_profile {
+  width: 40%;
+}
+/************  testmonial ended  *******************/
+
+/************  dream  *******************/
+.dream {
+  background-color: #ffffff;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.dream_show {
+  width: 30%;
+  min-height: 100vh;
+  padding: 80px 0 80px 100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dream_show > iframe {
+  margin: 0 -200px 0 auto;
+  width: 700px;
+  height: 350px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dream_content {
+  width: 70%;
+  padding: 80px 100px 80px 200px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #f4faff;
+  box-sizing: border-box;
+}
+
+.dream_content > h2 {
+  font-size: 2.4rem;
+  font-weight: lighter;
+  color: #b24020;
+}
+/************  dream ended  *******************/
+
+/************  footer  *******************/
+footer {
+  padding: 50px 100px;
+  display: grid;
+  column-gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #f3f3f3;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div > p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+footer > div > a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+  margin: 3px 0;
+}
+
+footer > div > a:hover {
+  color: rgb(76, 76, 235);
+}
+
+/************  footer ended  *******************/
